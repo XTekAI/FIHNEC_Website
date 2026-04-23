@@ -17,7 +17,7 @@ export default function TestimonioCard({ testimonio }: Props) {
       </div>
       
       <p className="text-navy/80 italic mb-6 mt-4 relative z-10 text-base sm:text-lg">
-        "{testimonio.texto}"
+        &ldquo;{testimonio.texto}&rdquo;
       </p>
       
       <div className="flex items-center gap-4">

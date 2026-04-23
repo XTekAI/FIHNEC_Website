@@ -58,7 +58,7 @@ export default function Hero() {
   }, []);
   
   // Animation loop for particles
-  useAnimationFrame(useCallback((deltaTime: number) => {
+  useAnimationFrame(useCallback((_deltaTime: number) => {
     setParticles(prevParticles => 
       prevParticles.map(particle => {
         let newX = particle.x + particle.vx;

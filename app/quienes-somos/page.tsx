@@ -43,7 +43,7 @@ export default function QuienesSomosPage() {
             </p>
             <p>
               Adicionalmente, él y su esposa Rose contribuyeron para escribir el libro{" "}
-              <span className="font-semibold text-navy italic">"La Gente Más Feliz de la Tierra"</span>,
+              <span className="font-semibold text-navy italic">&ldquo;La Gente Más Feliz de la Tierra&rdquo;</span>,
               {" "}que narra la historia del nacimiento de la Fraternidad — usada por Dios para cambiar las vidas de hombres y mujeres de todo el mundo.
             </p>
           </div>

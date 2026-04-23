@@ -132,7 +132,7 @@ export default function QuienesSomos() {
                 {current.slogan && (
                   <div className="mt-8 border-t border-gold/30 pt-6">
                     <p className="font-playfair text-xl sm:text-2xl md:text-3xl font-bold text-gold italic">
-                      "{current.slogan}"
+                      &ldquo;{current.slogan}&rdquo;
                     </p>
                   </div>
                 )}
