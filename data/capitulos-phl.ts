@@ -10,7 +10,7 @@ export const capitulosPHL: Capitulo[] = [
     lugar: "Upper Darby",
     dia: "Por confirmar",
     hora: "Por confirmar",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/phl-1.jpeg"
   },
   {
     id: "phl-2",
@@ -21,7 +21,7 @@ export const capitulosPHL: Capitulo[] = [
     lugar: "Restaurant Porvenir Catracho",
     dia: "Por confirmar",
     hora: "Por confirmar",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/phl-2.jpeg"
   },
   {
     id: "phl-3",
@@ -32,6 +32,6 @@ export const capitulosPHL: Capitulo[] = [
     lugar: "La Unika 1680 AM",
     dia: "Sábado",
     hora: "3:00 - 4:00 PM",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/phl-3.jpeg"
   }
 ];

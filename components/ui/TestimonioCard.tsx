@@ -3,7 +3,6 @@
 // ============================================
 import { Testimonio } from "@/lib/types";
 import { Quote } from "lucide-react";
-import Image from "next/image";
 
 interface Props {
   testimonio: Testimonio;
@@ -20,14 +19,11 @@ export default function TestimonioCard({ testimonio }: Props) {
         &ldquo;{testimonio.texto}&rdquo;
       </p>
       
-      <div className="flex items-center gap-4">
-        <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gold">
-          <Image 
-            src={testimonio.avatar || "/images/avatar-placeholder.jpg"} 
-            alt={`Avatar de ${testimonio.nombre}`}
-            fill
-            className="object-cover"
-          />
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center shrink-0">
+          <span className="font-playfair font-bold text-gold text-base">
+            {testimonio.nombre.charAt(0)}
+          </span>
         </div>
         <div>
           <h4 className="font-bold text-navy">{testimonio.nombre}</h4>

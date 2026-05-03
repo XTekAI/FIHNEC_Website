@@ -2,6 +2,8 @@
 // ARCHIVO: /app/capitulos/new-jersey/page.tsx
 // ============================================
 import { Metadata } from "next";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import { capitulosNJ } from "@/data/capitulos-nj";
 import CapituloCard from "@/components/ui/CapituloCard";
 
@@ -13,7 +15,10 @@ export const metadata: Metadata = {
 export default function CapitulosNJPage() {
   return (
     <div className="pt-24 bg-gray-soft min-h-screen">
-      <div className="bg-navy py-16 text-center px-4">
+      <div className="bg-navy py-16 text-center px-4 relative">
+        <Link href="/capitulos" className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 flex items-center gap-2 text-gold hover:text-white transition-colors text-sm font-medium">
+          <ArrowLeft size={16} /> Todos los capítulos
+        </Link>
         <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
           Capítulos en New Jersey
         </h1>

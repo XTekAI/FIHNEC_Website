@@ -3,6 +3,7 @@
 // ============================================
 import Hero from "@/components/sections/Hero";
 import TrustBar from "@/components/sections/TrustBar";
+import PresidenteNacional from "@/components/sections/PresidenteNacional";
 import QuienesSomos from "@/components/sections/QuienesSomos";
 import CapitulosNJ from "@/components/sections/CapitulosNJ";
 import CapitulosPHL from "@/components/sections/CapitulosPHL";
@@ -159,6 +160,7 @@ export default function Home() {
       />
       <Hero />
       <TrustBar />
+      <PresidenteNacional />
       <QuienesSomos />
       <Reuniones />
       <CapitulosNJ />

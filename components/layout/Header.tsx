@@ -6,12 +6,15 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +31,10 @@ export default function Header() {
     { name: 'Actividades', href: '/actividades' },
   ];
 
+  const transparentHeader = isHome && !isScrolled;
+
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-navy shadow-xl py-4 border-b border-gold/20' : 'bg-navy/75 backdrop-blur-md py-6'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${transparentHeader ? 'bg-navy/75 backdrop-blur-md py-6' : 'bg-navy shadow-xl py-4 border-b border-gold/20'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/images/logo.png" alt="FIHNEC Logo" width={120} height={60} className="object-contain" priority />

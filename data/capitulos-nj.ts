@@ -11,7 +11,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Miércoles",
     hora: "7:00 PM",
     contacto: "732-600-9504",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-1.jpeg"
   },
   {
     id: "nj-2",
@@ -23,7 +23,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Martes",
     hora: "7:00 PM",
     contacto: "848-330-7908",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-2.jpeg"
   },
   {
     id: "nj-3",
@@ -35,7 +35,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Miércoles",
     hora: "7:30 PM",
     contacto: "201-403-0204",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-3.jpeg"
   },
   {
     id: "nj-4",
@@ -46,7 +46,7 @@ export const capitulosNJ: Capitulo[] = [
     lugar: "IHOP Hightstown",
     dia: "Lunes",
     hora: "7:00 PM",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-4.jpeg"
   },
   {
     id: "nj-5",
@@ -58,7 +58,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Sábado",
     hora: "9:00 AM",
     contacto: "346-932-7856",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-5.jpeg"
   },
   {
     id: "nj-6",
@@ -70,7 +70,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Martes",
     hora: "7:00 PM",
     contacto: "732-797-8684",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-6.jpeg"
   },
   {
     id: "nj-7",
@@ -82,7 +82,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Jueves",
     hora: "7:30 PM",
     contacto: "551-587-0096",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-7.jpeg"
   },
   {
     id: "nj-8",
@@ -94,7 +94,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Miércoles",
     hora: "7:00 PM",
     contacto: "609-495-7525",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-8.jpeg"
   },
   {
     id: "nj-9",
@@ -106,7 +106,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Martes",
     hora: "7:00 PM",
     contacto: "551-404-6248",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-9.jpeg"
   },
   {
     id: "nj-10",
@@ -117,7 +117,7 @@ export const capitulosNJ: Capitulo[] = [
     lugar: "Panera Bread Howell",
     dia: "Lunes (cada 15 días)",
     hora: "7:00 PM",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-10.jpeg"
   },
   {
     id: "nj-11",
@@ -128,7 +128,7 @@ export const capitulosNJ: Capitulo[] = [
     lugar: "Pupusas to Go",
     dia: "Lunes",
     hora: "7:30 PM",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-11.jpeg"
   },
   {
     id: "nj-12",
@@ -140,6 +140,6 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Jueves",
     hora: "7:30 PM",
     contacto: "201-726-7321",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/nj-12.jpeg"
   }
 ];
