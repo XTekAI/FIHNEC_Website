@@ -3,67 +3,143 @@ import { Capitulo } from "../lib/types";
 export const capitulosNJ: Capitulo[] = [
   {
     id: "nj-1",
-    nombre: "Capítulo Newark",
-    ciudad: "Newark",
+    nombre: "Capítulo Naciones",
+    ciudad: "Howell",
     region: "NJ",
-    direccion: "123 Main St, Newark, NJ 07102", // TODO: reemplazar con dato real
-    lugar: "Hotel Robert Treat", // TODO: reemplazar con dato real
-    dia: "Lunes", // TODO: reemplazar con dato real
-    hora: "7:00 PM", // TODO: reemplazar con dato real
-    lider: "Juan Pérez", // TODO: reemplazar con dato real
-    contacto: "(555) 123-4567", // TODO: reemplazar con dato real
-    imagen: "/images/capitulo-placeholder.jpg" // TODO: reemplazar con dato real
+    direccion: "4715 US-9, Howell, NJ 07731",
+    lugar: "Panera Bread Howell",
+    dia: "Miércoles",
+    hora: "7:00 PM",
+    contacto: "732-600-9504",
+    imagen: "/images/capitulo-placeholder.jpg"
   },
   {
     id: "nj-2",
-    nombre: "Capítulo Elizabeth",
-    ciudad: "Elizabeth",
+    nombre: "Capítulo Brick",
+    ciudad: "Brick Township",
     region: "NJ",
-    direccion: "456 Broad St, Elizabeth, NJ 07201", // TODO: reemplazar con dato real
-    lugar: "Restaurante El Criollo", // TODO: reemplazar con dato real
-    dia: "Martes", // TODO: reemplazar con dato real
-    hora: "7:30 PM", // TODO: reemplazar con dato real
-    lider: "Carlos Gomez", // TODO: reemplazar con dato real
-    contacto: "(555) 987-6543", // TODO: reemplazar con dato real
-    imagen: "/images/capitulo-placeholder.jpg" // TODO: reemplazar con dato real
+    direccion: "906 NJ-70, Brick Township, NJ",
+    lugar: "Brick Diner",
+    dia: "Martes",
+    hora: "7:00 PM",
+    contacto: "848-330-7908",
+    imagen: "/images/capitulo-placeholder.jpg"
   },
   {
     id: "nj-3",
-    nombre: "Capítulo Paterson",
-    ciudad: "Paterson",
+    nombre: "Capítulo Fairview",
+    ciudad: "Fairview",
     region: "NJ",
-    direccion: "789 Market St, Paterson, NJ 07501", // TODO: reemplazar con dato real
-    lugar: "Salón de Eventos Las Rosas", // TODO: reemplazar con dato real
-    dia: "Miércoles", // TODO: reemplazar con dato real
-    hora: "8:00 PM", // TODO: reemplazar con dato real
-    lider: "Luis Martinez", // TODO: reemplazar con dato real
-    contacto: "(555) 321-7654", // TODO: reemplazar con dato real
-    imagen: "/images/capitulo-placeholder.jpg" // TODO: reemplazar con dato real
+    direccion: "257 Bergen Blvd, Fairview, NJ 07022",
+    lugar: "Mesa Maya Continental",
+    dia: "Miércoles",
+    hora: "7:30 PM",
+    contacto: "201-403-0204",
+    imagen: "/images/capitulo-placeholder.jpg"
   },
   {
     id: "nj-4",
-    nombre: "Capítulo Jersey City",
-    ciudad: "Jersey City",
+    nombre: "Capítulo Latinos Unidos",
+    ciudad: "East Windsor",
     region: "NJ",
-    direccion: "101 Kennedy Blvd, Jersey City, NJ 07304", // TODO: reemplazar con dato real
-    lugar: "Centro Comunitario Hispano", // TODO: reemplazar con dato real
-    dia: "Jueves", // TODO: reemplazar con dato real
-    hora: "7:00 PM", // TODO: reemplazar con dato real
-    lider: "Roberto Fernandez", // TODO: reemplazar con dato real
-    contacto: "(555) 876-5432", // TODO: reemplazar con dato real
-    imagen: "/images/capitulo-placeholder.jpg" // TODO: reemplazar con dato real
+    direccion: "610 NJ-33, East Windsor, NJ 08520",
+    lugar: "IHOP Hightstown",
+    dia: "Lunes",
+    hora: "7:00 PM",
+    imagen: "/images/capitulo-placeholder.jpg"
   },
   {
     id: "nj-5",
-    nombre: "Capítulo Union City",
+    nombre: "Capítulo Continental Maya",
+    ciudad: "Fairview",
+    region: "NJ",
+    direccion: "257 Bergen Blvd, Fairview, NJ 07022",
+    lugar: "Mesa Maya Restaurant",
+    dia: "Sábado",
+    hora: "9:00 AM",
+    contacto: "346-932-7856",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-6",
+    nombre: "Capítulo La Gracia",
+    ciudad: "Plainfield",
+    region: "NJ",
+    direccion: "25 Watchung Ave, Plainfield, NJ 07060",
+    lugar: "Plainfield",
+    dia: "Martes",
+    hora: "7:00 PM",
+    contacto: "732-797-8684",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-7",
+    nombre: "Capítulo Damas Norest NJ",
+    ciudad: "Jersey City",
+    region: "NJ",
+    direccion: "280 Central Ave, Jersey City, NJ 07307",
+    lugar: "Restaurante Sabor a Perú",
+    dia: "Jueves",
+    hora: "7:30 PM",
+    contacto: "551-587-0096",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-8",
+    nombre: "Capítulo Damas Hamilton / Trenton",
+    ciudad: "Hamilton",
+    region: "NJ",
+    direccion: "2465 S Broad St, Hamilton, NJ 08610",
+    lugar: "La Lucci Pizza",
+    dia: "Miércoles",
+    hora: "7:00 PM",
+    contacto: "609-495-7525",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-9",
+    nombre: "Capítulo Damas Oasis",
     ciudad: "Union City",
     region: "NJ",
-    direccion: "202 Bergenline Ave, Union City, NJ 07087", // TODO: reemplazar con dato real
-    lugar: "Diner Las Palmas", // TODO: reemplazar con dato real
-    dia: "Sábado", // TODO: reemplazar con dato real
-    hora: "9:00 AM", // TODO: reemplazar con dato real
-    lider: "Miguel Angel", // TODO: reemplazar con dato real
-    contacto: "(555) 234-5678", // TODO: reemplazar con dato real
-    imagen: "/images/capitulo-placeholder.jpg" // TODO: reemplazar con dato real
+    direccion: "4501 Palisade Ave, Union City, NJ 07087",
+    lugar: "Community Room",
+    dia: "Martes",
+    hora: "7:00 PM",
+    contacto: "551-404-6248",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-10",
+    nombre: "Capítulo Jóvenes – The Quiet Power",
+    ciudad: "Howell",
+    region: "NJ",
+    direccion: "4715 US-9, Howell, NJ 07731",
+    lugar: "Panera Bread Howell",
+    dia: "Lunes (cada 15 días)",
+    hora: "7:00 PM",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-11",
+    nombre: "Capítulo Las Huellas",
+    ciudad: "Bloomfield",
+    region: "NJ",
+    direccion: "Bloomfield, NJ",
+    lugar: "Pupusas to Go",
+    dia: "Lunes",
+    hora: "7:30 PM",
+    imagen: "/images/capitulo-placeholder.jpg"
+  },
+  {
+    id: "nj-12",
+    nombre: "Capítulo Hispanoamericano",
+    ciudad: "Jersey City",
+    region: "NJ",
+    direccion: "700 Route 440, Jersey City, NJ 07304",
+    lugar: "Restaurante IHOP",
+    dia: "Jueves",
+    hora: "7:30 PM",
+    contacto: "201-726-7321",
+    imagen: "/images/capitulo-placeholder.jpg"
   }
 ];

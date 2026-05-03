@@ -2,7 +2,7 @@
 // ARCHIVO: /components/ui/CapituloCard.tsx
 // ============================================
 import { Capitulo } from "@/lib/types";
-import { MapPin, Clock, Calendar, User } from "lucide-react";
+import { MapPin, Clock, Calendar, Phone, User } from "lucide-react";
 import Image from "next/image";
 
 interface Props {
@@ -39,24 +39,33 @@ export default function CapituloCard({ capitulo }: Props) {
           </div>
           <div className="flex items-center gap-3">
             <Calendar className="text-gold shrink-0" size={16} />
-            <span>{capitulo.dia}s</span>
+            <span>{capitulo.dia}</span>
           </div>
           <div className="flex items-center gap-3">
             <Clock className="text-gold shrink-0" size={16} />
             <span>{capitulo.hora}</span>
           </div>
-          <div className="flex items-center gap-3">
-            <User className="text-gold shrink-0" size={16} />
-            <span>Líder: {capitulo.lider}</span>
-          </div>
+          {capitulo.lider && (
+            <div className="flex items-center gap-3">
+              <User className="text-gold shrink-0" size={16} />
+              <span>Líder: {capitulo.lider}</span>
+            </div>
+          )}
         </div>
-        
-        <a 
-          href={`tel:${capitulo.contacto}`} 
-          className="block w-full text-center bg-gray-soft text-navy text-sm font-semibold py-3 rounded-lg border border-gray-200 hover:bg-gold hover:text-white hover:border-gold transition-colors min-h-[44px]"
-        >
-          Contactar: {capitulo.contacto}
-        </a>
+
+        {capitulo.contacto ? (
+          <a
+            href={`tel:${capitulo.contacto}`}
+            className="block w-full text-center bg-gray-soft text-navy text-sm font-semibold py-3 rounded-lg border border-gray-200 hover:bg-gold hover:text-white hover:border-gold transition-colors min-h-[44px] flex items-center justify-center gap-2"
+          >
+            <Phone size={14} />
+            {capitulo.contacto}
+          </a>
+        ) : (
+          <div className="block w-full text-center bg-gray-soft text-navy/50 text-sm py-3 rounded-lg border border-gray-200 min-h-[44px] flex items-center justify-center">
+            Contacto por confirmar
+          </div>
+        )}
       </div>
     </div>
   );

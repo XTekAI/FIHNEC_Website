@@ -7,8 +7,8 @@ export interface Capitulo {
   lugar: string
   dia: string
   hora: string
-  lider: string
-  contacto: string
+  lider?: string
+  contacto?: string
   imagen?: string
 }
 
