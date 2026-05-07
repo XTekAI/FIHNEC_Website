@@ -109,7 +109,7 @@ export default function Hero() {
             className="mb-6 inline-block"
           >
             <span className="bg-gold/20 text-gold-light border border-gold/40 px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase">
-              Desde 1952 | +95 Países | NJ & PHL
+              Desde 1952 | +95 Países | Zona Noreste
             </span>
           </motion.div>
 
@@ -119,7 +119,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight text-white"
           >
-            Transformando Vidas en <span className="text-gold">New Jersey</span> y <span className="text-gold">Philadelphia</span>
+            Transformando Vidas en la <span className="text-gold">Zona Noreste</span>
           </motion.h1>
 
           <motion.p 

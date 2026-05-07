@@ -13,10 +13,15 @@ export default function Footer() {
           <div className="flex items-center space-x-2 mb-4">
             <Image src="/images/logo.png" alt="FIHNEC Logo" width={120} height={60} className="object-contain" />
           </div>
-          <p className="text-gray-300 mb-6 max-w-md">
-            Fraternidad Internacional de Hombres de Negocios del Evangelio Completo. 
-            Conectando hombres latinos con un propósito mayor en New Jersey y Philadelphia.
+          <p className="text-gray-300 mb-3 max-w-md">
+            Fraternidad Internacional de Hombres de Negocios del Evangelio Completo.
+            Más de 35 capítulos activos en la Zona Noreste.
           </p>
+          <div className="flex gap-2 mb-6">
+            {["NJ", "PA", "VA", "MD"].map((s) => (
+              <span key={s} className="bg-gold/20 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full">{s}</span>
+            ))}
+          </div>
           <div className="flex space-x-4 text-gold">
             {/* TODO: Reemplazar con contenido real - Enlaces sociales */}
             <a href="#" className="hover:text-white transition-colors">
@@ -59,7 +64,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white/10 text-center text-sm text-gray-400">
-        <p>&copy; {new Date().getFullYear()} FIHNEC New Jersey & Philadelphia. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} FIHNEC – Zona Noreste (NJ · PA · VA · MD). Todos los derechos reservados.</p>
       </div>
     </footer>
   );

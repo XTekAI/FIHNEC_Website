@@ -1,13 +1,9 @@
-// ============================================
-// ARCHIVO: /components/sections/CapitulosNJ.tsx
-// ============================================
 import Link from "next/link";
-import { capitulosNJ } from "@/data/capitulos-nj";
+import { capitulosVA } from "@/data/capitulos-va";
 import CapituloCard from "../ui/CapituloCard";
 
-export default function CapitulosNJ() {
-  // Solo mostramos los primeros 3 para la landing
-  const capitulosPreview = capitulosNJ.slice(0, 3);
+export default function CapitulosVA() {
+  const capitulosPreview = capitulosVA.slice(0, 3);
 
   return (
     <section className="py-20 bg-white">
@@ -16,15 +12,15 @@ export default function CapitulosNJ() {
           <div>
             <span className="text-gold text-sm font-semibold uppercase tracking-widest">Zona Noreste</span>
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-navy mb-4 mt-1">
-              Capítulos en New Jersey
+              Capítulos en Virginia
             </h2>
             <div className="w-20 h-1 bg-gold rounded-full"></div>
           </div>
-          <Link 
-            href="/capitulos/new-jersey" 
+          <Link
+            href="/capitulos/virginia"
             className="hidden md:flex text-gold font-bold hover:text-navy transition-colors items-center gap-1 group mt-4 md:mt-0"
           >
-            Ver todos los capítulos NJ <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+            Ver todos los capítulos VA <span className="transform group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
 
@@ -35,11 +31,8 @@ export default function CapitulosNJ() {
         </div>
 
         <div className="mt-10 text-center md:hidden">
-          <Link 
-            href="/capitulos/new-jersey" 
-            className="inline-flex text-gold font-bold hover:text-navy transition-colors items-center gap-1"
-          >
-            Ver todos los capítulos NJ →
+          <Link href="/capitulos/virginia" className="inline-flex text-gold font-bold hover:text-navy transition-colors items-center gap-1">
+            Ver todos los capítulos VA →
           </Link>
         </div>
       </div>

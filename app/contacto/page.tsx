@@ -6,8 +6,8 @@ import ContactoForm from "@/components/sections/ContactoForm";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contacto | FIHNEC NJ & Philadelphia",
-  description: "Ponte en contacto con la Fraternidad de Hombres de Negocios Cristianos en New Jersey o Philadelphia.",
+  title: "Contacto | FIHNEC Zona Noreste",
+  description: "Ponte en contacto con FIHNEC — Zona Noreste. Capítulos en New Jersey, Pennsylvania, Virginia y Maryland.",
 };
 
 export default function ContactoPage() {

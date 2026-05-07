@@ -24,7 +24,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": ["Organization", "ReligiousOrganization"],
-            "name": "FIHNEC New Jersey & Philadelphia",
+            "name": "FIHNEC Zona Noreste",
             "alternateName": "Fraternidad Internacional de Hombres de Negocios del Evangelio Completo",
             "url": "https://fihnec-nj-phl.org",
             "logo": "https://fihnec-nj-phl.org/images/logo.png",
@@ -79,7 +79,7 @@ export default function Home() {
                 "name": "¿Qué es FIHNEC?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FIHNEC (Fraternidad Internacional de Hombres de Negocios del Evangelio Completo) es una comunidad cristiana con capítulos en New Jersey y Philadelphia. Nos reunimos para testificar de lo que Jesucristo ha hecho en nuestras vidas. Somos personas de toda condición — obreros, amas de casa, comerciantes y profesionales — unidos por la fe en Cristo."
+                  "text": "FIHNEC (Fraternidad Internacional de Hombres de Negocios del Evangelio Completo) es una comunidad cristiana con más de 35 capítulos en la Zona Noreste — New Jersey, Pennsylvania, Virginia y Maryland. Nos reunimos para testificar de lo que Jesucristo ha hecho en nuestras vidas. Somos personas de toda condición — obreros, amas de casa, comerciantes y profesionales — unidos por la fe en Cristo."
                 }
               },
               {
@@ -151,7 +151,7 @@ export default function Home() {
                 "name": "¿Las reuniones de FIHNEC son en español?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sí. La mayoría de nuestros capítulos en New Jersey y Philadelphia operan principalmente en español para servir mejor a la comunidad latina de la región."
+                  "text": "Sí. La mayoría de nuestros capítulos en la Zona Noreste (NJ, PA, VA y MD) operan principalmente en español para servir mejor a la comunidad latina de la región."
                 }
               }
             ]

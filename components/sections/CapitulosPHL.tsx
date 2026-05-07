@@ -14,8 +14,9 @@ export default function CapitulosPHL() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div>
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-navy mb-4">
-              Capítulos en Philadelphia
+            <span className="text-gold text-sm font-semibold uppercase tracking-widest">Zona Noreste</span>
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-navy mb-4 mt-1">
+              Capítulos en Pennsylvania
             </h2>
             <div className="w-20 h-1 bg-gold rounded-full"></div>
           </div>

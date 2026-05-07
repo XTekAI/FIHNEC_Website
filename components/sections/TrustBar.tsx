@@ -7,7 +7,7 @@ export default function TrustBar() {
   const stats = [
     { icon: <Building2 size={24} />, label: "Fundada en 1952" },
     { icon: <Globe2 size={24} />, label: "+95 Naciones" },
-    { icon: <MapPin size={24} />, label: "Capítulos en NJ & PHL" },
+    { icon: <MapPin size={24} />, label: "35+ Capítulos Activos" },
     { icon: <Users size={24} />, label: "Comunidad Latina" },
   ];
 

@@ -2,7 +2,7 @@ export interface Capitulo {
   id: string
   nombre: string
   ciudad: string
-  region: "NJ" | "PHL"
+  region: "NJ" | "PHL" | "VA" | "MD"
   direccion: string
   lugar: string
   dia: string

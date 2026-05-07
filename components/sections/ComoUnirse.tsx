@@ -8,7 +8,7 @@ export default function ComoUnirse() {
     {
       icon: <Search size={32} />,
       title: "Busca",
-      description: "Encuentra el capítulo más cercano a ti en New Jersey o Philadelphia.",
+      description: "Encuentra el capítulo más cercano a ti en la Zona Noreste — NJ, PA, VA y MD.",
     },
     {
       icon: <Map size={32} />,

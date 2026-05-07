@@ -20,8 +20,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "FIHNEC New Jersey & Philadelphia | Comunidad Cristiana para Toda la Familia",
-  description: "FIHNEC es una fraternidad cristiana en New Jersey y Philadelphia abierta a toda la familia — hombres, mujeres, jóvenes y niños. Sin distinción de religión, raza o posición social. Si estás pasando por problemas económicos, familiares o emocionales, aquí encontrarás apoyo y esperanza en Cristo.",
+  title: "FIHNEC Zona Noreste | Comunidad Cristiana para Toda la Familia — NJ · PA · VA · MD",
+  description: "FIHNEC es una fraternidad cristiana con más de 35 capítulos en la Zona Noreste (NJ, PA, VA y MD), abierta a toda la familia — hombres, mujeres, jóvenes y niños. Sin distinción de religión, raza o posición social. Aquí encontrarás apoyo y esperanza en Cristo.",
   keywords: [
     // Búsquedas de identidad / quiénes son
     "FIHNEC New Jersey", "FIHNEC Philadelphia", "Fraternidad Internacional de Hombres de Negocios del Evangelio Completo NJ",
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     "familia cristiana New Jersey", "testimonio de fe NJ", "La Gente Más Feliz de la Tierra",
   ].join(", "),
   openGraph: {
-    title: "FIHNEC NJ & Philadelphia — Reuniones Cristianas para Toda la Familia",
-    description: "Una fraternidad donde hombres, mujeres, jóvenes y niños testifican del poder de Dios. Sin distinción de religión o posición social. Capítulos en NJ y Philadelphia.",
-    url: "https://fihnec-nj-phl.org",
-    siteName: "FIHNEC NJ & PHL",
+    title: "FIHNEC Zona Noreste — Reuniones Cristianas para Toda la Familia",
+    description: "Una fraternidad donde hombres, mujeres, jóvenes y niños testifican del poder de Dios. Más de 35 capítulos activos en NJ, PA, VA y MD.",
+    url: "https://fihnec-northeast.org",
+    siteName: "FIHNEC Zona Noreste",
     images: [
       {
         url: "/images/og-placeholder.jpg",
