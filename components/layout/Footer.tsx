@@ -47,18 +47,17 @@ export default function Footer() {
         <div>
           <h4 className="font-playfair text-lg font-bold text-white mb-4">Contacto</h4>
           <ul className="space-y-3">
-            {/* TODO: Reemplazar con contenido real */}
             <li className="flex items-start space-x-3 text-sm">
               <MapPin className="text-gold shrink-0 mt-0.5" size={16} />
-              <span>Oficina Central NJ<br/>123 Main St, Newark, NJ</span>
+              <span>28610 HWY 290, Suite F09 # 235<br/>Cypress, TX 77433</span>
             </li>
             <li className="flex items-center space-x-3 text-sm">
               <Phone className="text-gold shrink-0" size={16} />
-              <span>(555) 123-4567</span>
+              <a href="tel:+18333426387" className="hover:text-gold transition-colors">+1 (833) 342-6387</a>
             </li>
             <li className="flex items-center space-x-3 text-sm">
               <Mail className="text-gold shrink-0" size={16} />
-              <span>info@fihnecnjphl.org</span>
+              <a href="mailto:operations@fgbmfiusa.org" className="hover:text-gold transition-colors">operations@fgbmfiusa.org</a>
             </li>
           </ul>
         </div>

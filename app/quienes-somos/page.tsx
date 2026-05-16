@@ -2,6 +2,7 @@
 // ARCHIVO: /app/quienes-somos/page.tsx
 // ============================================
 import { Metadata } from "next";
+import Image from "next/image";
 import QuienesSomos from "@/components/sections/QuienesSomos";
 import Reuniones from "@/components/sections/Reuniones";
 import CTABanner from "@/components/sections/CTABanner";
@@ -32,6 +33,25 @@ export default function QuienesSomosPage() {
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4">Demos Shakarian</h2>
             <p className="text-navy/50 text-lg">1913 – 1993</p>
             <div className="w-24 h-1 bg-gold mx-auto rounded-full mt-4"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-xl border border-gold/20">
+              <Image
+                src="/images/fundador-1.jpeg"
+                alt="Demos Shakarian"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-xl border border-gold/20">
+              <Image
+                src="/images/fundador-2.jpeg"
+                alt="Demos Shakarian"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="bg-gray-soft rounded-2xl p-8 md:p-12 border border-gray-100 space-y-6 text-lg text-navy/80 leading-relaxed">

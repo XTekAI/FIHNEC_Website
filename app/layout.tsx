@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "FIHNEC Zona Noreste | Comunidad Cristiana para Toda la Familia — NJ · PA · VA · MD",
+  title: "FIHNEC Zona Noreste | Reuniones de Negocios para Toda la Familia — NJ · PA · VA · MD",
   description: "FIHNEC es una fraternidad cristiana con más de 35 capítulos en la Zona Noreste (NJ, PA, VA y MD), abierta a toda la familia — hombres, mujeres, jóvenes y niños. Sin distinción de religión, raza o posición social. Aquí encontrarás apoyo y esperanza en Cristo.",
   keywords: [
     // Búsquedas de identidad / quiénes son
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "familia cristiana New Jersey", "testimonio de fe NJ", "La Gente Más Feliz de la Tierra",
   ].join(", "),
   openGraph: {
-    title: "FIHNEC Zona Noreste — Reuniones Cristianas para Toda la Familia",
+    title: "FIHNEC Zona Noreste — Reuniones de Negocios para Toda la Familia",
     description: "Una fraternidad donde hombres, mujeres, jóvenes y niños testifican del poder de Dios. Más de 35 capítulos activos en NJ, PA, VA y MD.",
     url: "https://fihnec-northeast.org",
     siteName: "FIHNEC Zona Noreste",

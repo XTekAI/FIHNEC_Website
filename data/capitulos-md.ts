@@ -12,7 +12,7 @@ export const capitulosMD: Capitulo[] = [
     dia: "Sábado",
     hora: "7:00 PM",
     contacto: "240-805-2953",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/md-2.jpeg"
   },
   // ── POR CONFIRMAR ───────────────────────────────
   {
@@ -25,6 +25,6 @@ export const capitulosMD: Capitulo[] = [
     dia: "Por confirmar",
     hora: "Por confirmar",
     contacto: "443-788-2045",
-    imagen: "/images/capitulo-placeholder.jpg"
+    imagen: "/images/capitulos/md-1.jpeg"
   }
 ];
