@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, MapPin, Globe, Ticket } from "lucide-react";
+import { Calendar, MapPin, Globe, Ticket, Zap, HeartHandshake } from "lucide-react";
 
 export default function Actividades() {
   return (
@@ -87,24 +87,57 @@ export default function Actividades() {
           </div>
         </div>
 
-        {/* Próximamente NJ & PHL */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-          {[
-            { region: "New Jersey", color: "bg-blue-900/30 border-blue-400/20", badge: "NJ" },
-            { region: "Philadelphia", color: "bg-purple-900/30 border-purple-400/20", badge: "PHL" },
-          ].map(({ region, color, badge }) => (
-            <div key={badge} className={`${color} border rounded-xl p-6 text-center`}>
-              <span className="inline-block bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-                {badge}
-              </span>
-              <h4 className="font-playfair text-white font-bold text-lg mb-2">
-                Eventos {region}
-              </h4>
-              <p className="text-gray-400 text-sm">
-                Próximamente anunciaremos los eventos locales de {region}. ¡Mantente al tanto!
-              </p>
+        {/* Eventos Mensuales */}
+        <div className="mb-4">
+          <h3 className="text-gold font-semibold uppercase tracking-widest text-sm text-center mb-6">
+            Eventos Mensuales
+          </h3>
+        </div>
+
+        {/* Jóvenes Varones y Damas */}
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6 hover:border-gold/40 transition-colors">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center text-gold shrink-0">
+              <Zap size={18} />
             </div>
-          ))}
+            <div>
+              <h4 className="font-playfair text-white font-bold text-lg">Jóvenes Varones y Damas</h4>
+              <p className="text-gold text-xs font-semibold uppercase tracking-widest">Mensual</p>
+            </div>
+          </div>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed">
+            Reuniones mensuales para jóvenes varones y damas. Un espacio de comunidad, propósito y fe donde cada generación descubre su llamado en Dios.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["New Jersey", "Pennsylvania", "Virginia"].map((state) => (
+              <span key={state} className="bg-white/10 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                <MapPin size={11} className="text-gold" /> {state}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Eventos de Parejas */}
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-12 hover:border-gold/40 transition-colors">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center text-gold shrink-0">
+              <HeartHandshake size={18} />
+            </div>
+            <div>
+              <h4 className="font-playfair text-white font-bold text-lg">Eventos de Parejas</h4>
+              <p className="text-gold text-xs font-semibold uppercase tracking-widest">Mensual</p>
+            </div>
+          </div>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed">
+            Encuentros mensuales diseñados para matrimonios y parejas. Un tiempo especial para crecer juntos en fe, fortalecer el hogar y compartir experiencias transformadoras.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["New Jersey", "Pennsylvania", "Virginia"].map((state) => (
+              <span key={state} className="bg-white/10 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                <MapPin size={11} className="text-gold" /> {state}
+              </span>
+            ))}
+          </div>
         </div>
 
       </div>

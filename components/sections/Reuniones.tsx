@@ -1,7 +1,7 @@
 // ============================================
 // ARCHIVO: /components/sections/Reuniones.tsx
 // ============================================
-import { Users, Heart, Zap, Baby } from "lucide-react";
+import { Users, Heart, Zap, Baby, HeartHandshake } from "lucide-react";
 
 const reuniones = [
   {
@@ -18,9 +18,15 @@ const reuniones = [
   },
   {
     icon: <Zap size={32} />,
-    titulo: "Jóvenes",
+    titulo: "Jóvenes Varones y Damas",
     descripcion:
-      "Los jóvenes tienen su propio capítulo donde descubren el propósito de Dios para su vida, construyen comunidad y encuentran dirección en un mundo que los necesita.",
+      "Su propio espacio mensual para descubrir propósito, construir comunidad y crecer en fe. NJ, PA y VA.",
+  },
+  {
+    icon: <HeartHandshake size={32} />,
+    titulo: "Parejas",
+    descripcion:
+      "Eventos mensuales para matrimonios y parejas. Conexión, fe compartida y crecimiento juntos. NJ, PA y VA.",
   },
   {
     icon: <Baby size={32} />,
@@ -36,9 +42,6 @@ export default function Reuniones() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-gold font-semibold uppercase tracking-widest text-sm mb-3">
-            Capítulos Mixtos
-          </p>
           <h2 className="font-playfair text-4xl font-bold text-white mb-4">
             Reuniones para Toda la Familia
           </h2>
@@ -50,7 +53,7 @@ export default function Reuniones() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {reuniones.map((r) => (
             <div
               key={r.titulo}

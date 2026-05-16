@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Calendar, MapPin, Ticket, CheckCircle, Users, Zap, Star } from "lucide-react";
+import { Calendar, MapPin, Ticket, CheckCircle, Users, Zap, Star, HeartHandshake } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Actividades y Eventos | FIHNEC NJ & Philadelphia",
@@ -148,20 +148,65 @@ export default function ActividadesPage() {
           </div>
         </div>
 
-        {/* Próximamente locales */}
+        {/* Eventos Mensuales */}
         <div>
-          <h3 className="font-playfair text-xl font-bold text-navy mb-6 text-center">
-            Eventos Locales — Próximamente
+          <h3 className="font-playfair text-xl font-bold text-navy mb-2 text-center">
+            Eventos Mensuales
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {["New Jersey", "Philadelphia"].map((region) => (
-              <div key={region} className="bg-white rounded-xl border border-gray-200 p-8 text-center shadow-sm">
-                <p className="text-gold font-bold text-lg mb-2">{region}</p>
-                <p className="text-navy/60 text-sm leading-relaxed">
-                  Los eventos locales de {region} serán anunciados próximamente. ¡Mantente al tanto!
-                </p>
+          <p className="text-navy/50 text-sm text-center mb-8">Activos en New Jersey, Pennsylvania y Virginia</p>
+
+          <div className="space-y-6">
+
+            {/* Jóvenes Varones y Damas */}
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+              <div className="bg-navy px-6 py-4 flex items-center gap-3">
+                <div className="w-9 h-9 bg-gold/20 border border-gold/40 rounded-full flex items-center justify-center shrink-0">
+                  <Zap size={16} className="text-gold" />
+                </div>
+                <div>
+                  <h4 className="font-playfair text-white font-bold text-lg">Jóvenes Varones y Damas</h4>
+                  <p className="text-gold text-xs font-semibold uppercase tracking-widest">Mensual</p>
+                </div>
               </div>
-            ))}
+              <div className="p-6">
+                <p className="text-navy/70 text-sm leading-relaxed mb-5">
+                  Reuniones mensuales para jóvenes varones y damas. Un espacio de comunidad, propósito y fe donde cada generación descubre su llamado en Dios.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["New Jersey", "Pennsylvania", "Virginia"].map((state) => (
+                    <span key={state} className="bg-gray-100 text-navy text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                      <MapPin size={11} className="text-gold" /> {state}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Eventos de Parejas */}
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+              <div className="bg-navy px-6 py-4 flex items-center gap-3">
+                <div className="w-9 h-9 bg-gold/20 border border-gold/40 rounded-full flex items-center justify-center shrink-0">
+                  <HeartHandshake size={16} className="text-gold" />
+                </div>
+                <div>
+                  <h4 className="font-playfair text-white font-bold text-lg">Eventos de Parejas</h4>
+                  <p className="text-gold text-xs font-semibold uppercase tracking-widest">Mensual</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-navy/70 text-sm leading-relaxed mb-5">
+                  Encuentros mensuales diseñados para matrimonios y parejas. Un tiempo especial para crecer juntos en fe, fortalecer el hogar y compartir experiencias transformadoras.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["New Jersey", "Pennsylvania", "Virginia"].map((state) => (
+                    <span key={state} className="bg-gray-100 text-navy text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                      <MapPin size={11} className="text-gold" /> {state}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
