@@ -10,6 +10,7 @@ import CapitulosPHL from "@/components/sections/CapitulosPHL";
 import Actividades from "@/components/sections/Actividades";
 import Testimonios from "@/components/sections/Testimonios";
 import Reuniones from "@/components/sections/Reuniones";
+import Fundador from "@/components/sections/Fundador";
 import ComoUnirse from "@/components/sections/ComoUnirse";
 import CTABanner from "@/components/sections/CTABanner";
 
@@ -23,19 +24,19 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": ["Organization", "ReligiousOrganization"],
+            "@type": "Organization",
             "name": "FIHNEC Zona Noreste",
-            "alternateName": "Fraternidad Internacional de Hombres de Negocios del Evangelio Completo",
+            "alternateName": "Fraternidad Internacional de Hombres de Negocios del Evangelio Completo — Sección Noreste",
             "url": "https://fihnec-nj-phl.org",
             "logo": "https://fihnec-nj-phl.org/images/logo.png",
             "foundingDate": "1952",
-            "description": "FIHNEC es una fraternidad cristiana abierta a hombres, mujeres, jóvenes y niños sin distinción de religión, raza o posición social. Nos reunimos para testificar del poder transformador de Jesucristo. Si estás pasando por problemas económicos, familiares, emocionales o espirituales, ven a conocer a La Gente Más Feliz de la Tierra.",
+            "description": "FIHNEC Zona Noreste es una fraternidad laica abierta a hombres, mujeres, jóvenes y niños sin distinción de religión, raza o posición social. Nuestras reuniones laicas son un espacio donde personas de toda condición comparten testimonios de vida y superación. Si estás pasando por problemas económicos, familiares o emocionales, ven a conocer a La Gente Más Feliz de la Tierra.",
             "slogan": "La Gente Más Feliz de la Tierra",
             "knowsAbout": [
-              "Fe cristiana", "Testimonio de vida", "Superación personal",
-              "Apoyo espiritual", "Familia cristiana", "Hombres de negocios y fe",
-              "Comunidad latina cristiana", "Salud emocional y fe",
-              "Recuperación espiritual", "Propósito de vida"
+              "Testimonio de vida", "Superación personal",
+              "Apoyo comunitario", "Familia y hogar", "Hombres de negocios",
+              "Comunidad latina", "Salud emocional",
+              "Recuperación personal", "Propósito de vida", "Fraternidad laica"
             ],
             "areaServed": [
               { "@type": "State", "name": "New Jersey" },
@@ -44,10 +45,12 @@ export default function Home() {
               { "@type": "City", "name": "Paterson, NJ" },
               { "@type": "City", "name": "Jersey City, NJ" },
               { "@type": "City", "name": "Union City, NJ" },
+              { "@type": "State", "name": "Pennsylvania" },
               { "@type": "City", "name": "Philadelphia, PA" },
               { "@type": "City", "name": "North Philadelphia, PA" },
               { "@type": "City", "name": "South Philadelphia, PA" },
-              { "@type": "City", "name": "Kensington, Philadelphia, PA" }
+              { "@type": "State", "name": "Virginia" },
+              { "@type": "State", "name": "Maryland" }
             ],
             "audience": {
               "@type": "Audience",
@@ -79,7 +82,7 @@ export default function Home() {
                 "name": "¿Qué es FIHNEC?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FIHNEC (Fraternidad Internacional de Hombres de Negocios del Evangelio Completo) es una comunidad cristiana con más de 35 capítulos en la Zona Noreste — New Jersey, Pennsylvania, Virginia y Maryland. Nos reunimos para testificar de lo que Jesucristo ha hecho en nuestras vidas. Somos personas de toda condición — obreros, amas de casa, comerciantes y profesionales — unidos por la fe en Cristo."
+                  "text": "FIHNEC (Fraternidad Internacional de Hombres de Negocios del Evangelio Completo) es una fraternidad laica con más de 35 capítulos en la Zona Noreste — New Jersey, Pennsylvania, Virginia y Maryland. Nos reunimos en cenas, almuerzos y desayunos donde personas de toda condición — obreros, amas de casa, comerciantes y profesionales — comparten testimonios de vida y superación personal."
                 }
               },
               {
@@ -95,7 +98,7 @@ export default function Home() {
                 "name": "¿Tengo que pertenecer a alguna iglesia para asistir a FIHNEC?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. FIHNEC no es una iglesia ni pertenece a ninguna denominación. Somos un grupo abierto a personas de cualquier religión, trasfondo o posición social. Lo único que nos une es Cristo."
+                  "text": "No. FIHNEC no es una iglesia ni pertenece a ninguna denominación. Somos una fraternidad laica abierta a personas de cualquier religión, trasfondo o posición social. Nuestras reuniones no son cultos religiosos — son encuentros informales donde se comparten testimonios de vida."
                 }
               },
               {
@@ -103,7 +106,7 @@ export default function Home() {
                 "name": "¿Cómo puede FIHNEC ayudarme si estoy pasando por problemas económicos?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "En FIHNEC escucharás testimonios reales de personas que han superado crisis económicas, pérdidas de negocio y dificultades financieras con la ayuda de Dios. No ofrecemos soluciones materiales, pero sí la esperanza y la comunidad que muchas personas necesitan como primer paso hacia una nueva vida."
+                  "text": "En nuestras reuniones laicas escucharás testimonios reales de personas que han superado crisis económicas, pérdidas de negocio y dificultades financieras. No ofrecemos soluciones materiales, pero sí la esperanza y la comunidad que muchas personas necesitan como primer paso hacia una nueva vida."
                 }
               },
               {
@@ -111,7 +114,7 @@ export default function Home() {
                 "name": "¿Pueden ayudarme en FIHNEC si tengo problemas emocionales o depresión?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sí. Muchos de nuestros miembros han vivido en depresión, ansiedad y desesperanza antes de conocer a Cristo. En nuestras reuniones encontrarás personas que entienden tu dolor y que han encontrado libertad espiritual, psicológica y emocional. Dios puede hacer lo mismo en tu vida."
+                  "text": "Sí. Muchos de nuestros miembros han vivido en depresión, ansiedad y desesperanza. En nuestras reuniones laicas encontrarás personas que entienden tu dolor y que han encontrado libertad emocional y un nuevo propósito de vida. Ven y escucha sus historias."
                 }
               },
               {
@@ -127,7 +130,7 @@ export default function Home() {
                 "name": "¿Dónde se reúne FIHNEC en New Jersey?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FIHNEC tiene capítulos activos en Newark, Elizabeth, Paterson, Jersey City y Union City, NJ. Las reuniones se realizan en formato de desayuno, almuerzo o cena en lugares accesibles como restaurantes y salones de la comunidad."
+                  "text": "FIHNEC Zona Noreste tiene capítulos activos en Newark, Elizabeth, Paterson, Jersey City y Union City, NJ. Las reuniones laicas se realizan en formato de desayuno, almuerzo o cena en restaurantes y salones de la comunidad, abiertas a todo público."
                 }
               },
               {
@@ -135,7 +138,7 @@ export default function Home() {
                 "name": "¿Dónde se reúne FIHNEC en Philadelphia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FIHNEC cuenta con capítulos en North Philadelphia, South Philadelphia y Kensington. Si estás en el área de Philadelphia y quieres conocer más sobre nuestras reuniones, contáctanos."
+                  "text": "FIHNEC Zona Noreste cuenta con capítulos en North Philadelphia, South Philadelphia y Kensington. Si estás en el área de Philadelphia y quieres conocer más sobre nuestras reuniones laicas, contáctanos."
                 }
               },
               {
@@ -143,7 +146,7 @@ export default function Home() {
                 "name": "¿Cómo puedo encontrar a Dios si nunca he ido a una iglesia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FIHNEC es precisamente para personas que quizás nunca pisarían una iglesia. Nos reunimos en ambientes informales — desayunos, almuerzos, cenas — donde escucharás historias reales de personas que conocieron a Dios y transformaron sus vidas. No necesitas ningún conocimiento religioso para venir. Solo ven."
+                  "text": "FIHNEC es precisamente para personas que quizás nunca pisarían una iglesia. Nuestras reuniones laicas se realizan en ambientes informales — desayunos, almuerzos, cenas — donde escucharás historias reales de personas que transformaron sus vidas. No necesitas ningún conocimiento religioso para venir. Solo ven."
                 }
               },
               {
@@ -162,6 +165,7 @@ export default function Home() {
       <TrustBar />
       <PresidenteNacional />
       <QuienesSomos />
+      <Fundador />
       <Reuniones />
       <CapitulosNJ />
       <CapitulosPHL />
