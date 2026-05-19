@@ -32,10 +32,15 @@ export default function CapituloCard({ capitulo }: Props) {
         <div className="space-y-3 mb-6 flex-grow text-sm text-navy/80">
           <div className="flex items-start gap-3">
             <MapPin className="text-gold shrink-0 mt-0.5" size={16} />
-            <span>
+            <a
+              href={`https://maps.google.com/?q=${encodeURIComponent(capitulo.direccion)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
               <strong>{capitulo.lugar}</strong><br/>
               {capitulo.direccion}
-            </span>
+            </a>
           </div>
           <div className="flex items-center gap-3">
             <Calendar className="text-gold shrink-0" size={16} />

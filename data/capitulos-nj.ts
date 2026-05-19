@@ -11,6 +11,7 @@ export const capitulosNJ: Capitulo[] = [
     lugar: "IHOP Hightstown",
     dia: "Lunes",
     hora: "7:00 PM",
+    contacto: "609-495-7525",
     imagen: "/images/capitulos/nj-4.jpeg"
   },
   {
@@ -22,6 +23,7 @@ export const capitulosNJ: Capitulo[] = [
     lugar: "Panera Bread Howell",
     dia: "Lunes (cada 15 días)",
     hora: "7:00 PM",
+    contacto: "848-330-7908",
     imagen: "/images/capitulos/nj-10.jpeg"
   },
   {
@@ -29,10 +31,11 @@ export const capitulosNJ: Capitulo[] = [
     nombre: "Capítulo Las Huellas",
     ciudad: "Bloomfield",
     region: "NJ",
-    direccion: "Bloomfield, NJ",
+    direccion: "388 Bloomfield Ave, Bloomfield, NJ 07003",
     lugar: "Pupusas to Go",
     dia: "Lunes",
     hora: "7:30 PM",
+    contacto: "973-980-7246",
     imagen: "/images/capitulos/nj-11.jpeg"
   },
   {
@@ -119,7 +122,7 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Miércoles",
     hora: "7:30 PM",
     contacto: "201-403-0204",
-    imagen: "/images/capitulos/nj-3.jpeg"
+    imagen: "/images/capitulos/nj-5.jpeg"
   },
   // ── JUEVES ─────────────────────────────────────
   {
@@ -157,6 +160,6 @@ export const capitulosNJ: Capitulo[] = [
     dia: "Sábado",
     hora: "9:00 AM",
     contacto: "346-932-7856",
-    imagen: "/images/capitulos/nj-5.jpeg"
+    imagen: "/images/capitulos/nj-3.jpeg"
   }
 ];

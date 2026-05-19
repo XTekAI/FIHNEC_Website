@@ -11,27 +11,49 @@ const regionContacts = [
   {
     estado: "Pennsylvania",
     badge: "PA",
-    telefonos: ["+1 (267) 444-2776", "+1 (267) 770-4356", "+1 (971) 915-3378"],
+    contactos: [
+      { tel: "+1 (267) 444-2776" },
+      { tel: "+1 (267) 770-4356" },
+      { tel: "+1 (971) 915-3378" },
+    ],
   },
   {
     estado: "New Jersey",
     badge: "NJ",
-    telefonos: ["+1 (609) 495-7525", "+1 (609) 356-2965", "+1 (848) 245-3353", "+1 (848) 245-2950"],
+    contactos: [
+      { nombre: "Latinos Unidos en Trenton", tel: "+1 (609) 495-7525" },
+      { tel: "+1 (609) 356-2965" },
+      { tel: "+1 (848) 245-3353" },
+      { tel: "+1 (848) 245-2950" },
+      { nombre: "Capítulo Jóvenes Howell", tel: "+1 (848) 330-7908" },
+      { nombre: "Capítulos Huellas", tel: "+1 (973) 980-7246" },
+    ],
   },
   {
     estado: "Maryland",
     badge: "MD",
-    telefonos: ["+1 (240) 805-2940", "+1 (240) 805-2953"],
+    contactos: [
+      { tel: "+1 (240) 805-2940" },
+      { tel: "+1 (240) 805-2953" },
+    ],
   },
   {
     estado: "Virginia",
     badge: "VA",
-    telefonos: ["+1 (571) 478-1175", "+1 (571) 282-9992", "+1 (571) 831-2874", "+1 (571) 494-3624"],
+    contactos: [
+      { tel: "+1 (571) 478-1175" },
+      { tel: "+1 (571) 282-9992" },
+      { tel: "+1 (571) 831-2874" },
+      { tel: "+1 (571) 494-3624" },
+    ],
   },
   {
     estado: "Washington DC",
     badge: "DC",
-    telefonos: ["+1 (786) 690-1570", "+1 (571) 282-8451"],
+    contactos: [
+      { tel: "+1 (786) 690-1570" },
+      { tel: "+1 (571) 282-8451" },
+    ],
   },
 ];
 
@@ -134,20 +156,23 @@ export default function ContactoPage() {
 
           {/* State contacts grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {regionContacts.map(({ estado, badge, telefonos }) => (
+            {regionContacts.map(({ estado, badge, contactos }) => (
               <div key={estado} className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-gold/30 transition-colors">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="bg-gold/20 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">{badge}</span>
                   <h3 className="font-playfair text-lg font-bold text-white">{estado}</h3>
                 </div>
                 <ul className="space-y-3">
-                  {telefonos.map((tel) => {
+                  {contactos.map(({ tel, nombre }) => {
                     const href = "tel:+" + tel.replace(/\D/g, "");
                     return (
                       <li key={tel}>
-                        <a href={href} className="flex items-center gap-2 text-gray-300 hover:text-gold transition-colors text-sm">
-                          <Phone size={14} className="text-gold shrink-0" />
-                          {tel}
+                        <a href={href} className="flex items-start gap-2 text-gray-300 hover:text-gold transition-colors text-sm">
+                          <Phone size={14} className="text-gold shrink-0 mt-0.5" />
+                          <span>
+                            {nombre && <span className="block text-white/80 text-xs font-semibold mb-0.5">{nombre}</span>}
+                            {tel}
+                          </span>
                         </a>
                       </li>
                     );

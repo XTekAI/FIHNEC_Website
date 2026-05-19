@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Calendar, MapPin, Ticket, CheckCircle, Users, Zap, Star, HeartHandshake } from "lucide-react";
+import { Calendar, MapPin, Ticket, CheckCircle, Users, Zap, Star, HeartHandshake, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Actividades y Eventos | FIHNEC NJ & Philadelphia",
@@ -145,6 +145,49 @@ export default function ActividadesPage() {
               <p className="text-navy/50 text-sm mt-3">Serás redirigido al sitio oficial de FGBMFI USA</p>
             </div>
 
+          </div>
+        </div>
+
+        {/* Brunch Familiar */}
+        <div className="bg-white rounded-2xl shadow-lg border border-gold/20 overflow-hidden">
+          <div className="bg-gold/10 border-b border-gold/20 px-6 py-3 flex items-center gap-2">
+            <Calendar size={16} className="text-gold" />
+            <span className="text-gold text-sm font-bold uppercase tracking-widest">Próximo Evento — ¡Este Viernes!</span>
+          </div>
+          <div className="flex flex-col md:flex-row">
+            <div className="relative w-full md:w-72 h-56 md:h-auto shrink-0">
+              <Image
+                src="/images/brunch-familiar-mayo.jpeg"
+                alt="Brunch Familiar FIHNEC"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="font-playfair text-2xl font-bold text-navy mb-1">Brunch Familiar</h3>
+              <p className="text-gold font-semibold mb-5">FIHNEC Zona Noreste</p>
+              <div className="flex flex-col gap-3 text-sm text-navy/70">
+                <div className="flex items-center gap-2">
+                  <Calendar size={15} className="text-gold shrink-0" />
+                  <span>23 de Mayo 2026 &nbsp;·&nbsp; Viernes</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock size={15} className="text-gold shrink-0" />
+                  <span>11:00 AM</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin size={15} className="text-gold shrink-0" />
+                  <a
+                    href="https://maps.google.com/?q=290+Main+St+Harleysville+PA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gold transition-colors underline underline-offset-2"
+                  >
+                    Henning&apos;s Market — 290 Main St, Harleysville, PA
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
