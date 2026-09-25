@@ -21,103 +21,68 @@ export default function Actividades() {
           <div className="w-20 h-1 bg-gold mx-auto rounded-full" />
         </div>
 
-        {/* National Convention — Featured */}
+        {/* Regional Convention — Featured */}
         <div className="bg-white/5 border border-gold/30 rounded-2xl overflow-hidden mb-10 hover:border-gold/60 transition-colors">
           <div className="bg-gold/10 border-b border-gold/20 px-6 py-3 flex items-center gap-2">
             <Globe size={16} className="text-gold" />
-            <span className="text-gold text-sm font-bold uppercase tracking-widest">Convención Nacional — ¡No te la pierdas!</span>
+            <span className="text-gold text-sm font-bold uppercase tracking-widest">Convención Regional — ¡No te la pierdas!</span>
           </div>
 
           <div className="flex flex-col md:flex-row">
-            <div className="relative w-full md:w-80 h-64 md:h-auto shrink-0">
+            <div className="relative w-full md:w-80 h-80 md:h-auto shrink-0">
               <Image
-                src="/images/convention-2026.jpg"
-                alt="FGBMFI 2026 National Convention"
+                src="/images/convencion-regional-noreste.jpeg"
+                alt="Convención Regional FGBMFI Zona Noreste — DoubleTree by Hilton Philadelphia"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
 
             <div className="p-8 md:p-10">
               <h3 className="font-playfair text-2xl md:text-3xl font-bold text-white mb-1">
-                Convención Nacional 2026
+                Convención Regional
               </h3>
-              <p className="text-gold font-semibold text-lg mb-5">FGBMFI USA</p>
-
-              <p className="text-gray-300 italic border-l-2 border-gold/50 pl-4 mb-6 text-sm md:text-base">
-                &ldquo;Un solo Cuerpo, un solo Espíritu&rdquo; — Efesios 4:4
-              </p>
+              <p className="text-gold font-semibold text-lg mb-5">FGBMFI Zona Noreste</p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                Una cita divina que marcará tu historia. Oradores de clase mundial, poder, unción y fraternidad como nunca antes. Dios tiene algo especial preparado para ti.
+                Un encuentro para toda la región: New Jersey, Pennsylvania, New York, Maryland y Virginia. Dos días de fraternidad, testimonios y comunión en el corazón de Philadelphia.
               </p>
 
               <div className="flex flex-col gap-3 mb-6 text-sm text-gray-300">
                 <div className="flex items-center gap-2">
                   <Calendar size={15} className="text-gold shrink-0" />
-                  <span>5–6 Junio 2026 &nbsp;·&nbsp; Viernes y Sábado</span>
+                  <span>Viernes y Sábado</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={15} className="text-gold shrink-0" />
-                  <span>Hilton Houston North — Houston, TX</span>
+                  <a
+                    href="https://maps.google.com/?q=DoubleTree+by+Hilton+Hotel+Philadelphia+Center+City,+237+S+Broad+St,+Philadelphia,+PA+19107"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gold transition-colors underline underline-offset-2"
+                  >
+                    DoubleTree by Hilton — 237 S Broad St, Philadelphia, PA
+                  </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Ticket size={15} className="text-gold shrink-0" />
-                  <span>Early Bird: <span className="text-gold font-bold">$160 USD</span> <span className="line-through text-gray-500">$200</span></span>
+                  <span>Entrada: <span className="text-gold font-bold">$150 USD</span> · Incluye cena del viernes y almuerzo del sábado</span>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <a
-                  href="https://www.fgbmfiusa.org/es/event/fgbmfi-usa-2026-convencion-nacional-68/register"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gold hover:bg-gold-light text-navy font-bold px-6 py-2.5 rounded-md transition-colors text-sm text-center"
-                >
-                  Registrarme ahora →
-                </a>
                 <Link
                   href="/actividades"
+                  className="inline-block bg-gold hover:bg-gold-light text-navy font-bold px-6 py-2.5 rounded-md transition-colors text-sm text-center"
+                >
+                  Ver detalles →
+                </Link>
+                <Link
+                  href="/contacto"
                   className="inline-block border border-gold/50 text-gold hover:border-gold text-sm font-semibold px-6 py-2.5 rounded-md transition-colors text-center"
                 >
-                  Ver detalles
+                  Más información
                 </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Brunch Familiar */}
-        <div className="bg-white/5 border border-gold/30 rounded-2xl overflow-hidden mb-10 hover:border-gold/60 transition-colors">
-          <div className="bg-gold/10 border-b border-gold/20 px-6 py-3 flex items-center gap-2">
-            <Calendar size={16} className="text-gold" />
-            <span className="text-gold text-sm font-bold uppercase tracking-widest">Próximo Evento — ¡Este Viernes!</span>
-          </div>
-          <div className="flex flex-col md:flex-row">
-            <div className="relative w-full md:w-72 h-56 md:h-auto shrink-0">
-              <Image
-                src="/images/brunch-familiar-mayo.jpeg"
-                alt="Brunch Familiar FIHNEC"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-8">
-              <h3 className="font-playfair text-2xl font-bold text-white mb-1">Brunch Familiar</h3>
-              <p className="text-gold font-semibold mb-5">FIHNEC Zona Noreste</p>
-              <div className="flex flex-col gap-3 text-sm text-gray-300">
-                <div className="flex items-center gap-2">
-                  <Calendar size={15} className="text-gold shrink-0" />
-                  <span>23 de Mayo 2026 &nbsp;·&nbsp; Viernes</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin size={15} className="text-gold shrink-0" />
-                  <span>Henning&apos;s Market — 290 Main St, Harleysville, PA</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Globe size={15} className="text-gold shrink-0" />
-                  <span>11:00 AM</span>
-                </div>
               </div>
             </div>
           </div>
