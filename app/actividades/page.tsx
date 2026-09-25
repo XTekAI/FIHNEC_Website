@@ -59,7 +59,7 @@ export default function ActividadesPage() {
                   <Calendar size={20} className="text-gold mt-0.5 shrink-0" />
                   <div>
                     <p className="text-xs text-navy/50 uppercase tracking-wide font-semibold">Fecha</p>
-                    <p className="text-navy font-bold">Viernes y Sábado</p>
+                    <p className="text-navy font-bold">Sábado y Domingo</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

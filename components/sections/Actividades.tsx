@@ -51,7 +51,7 @@ export default function Actividades() {
               <div className="flex flex-col gap-3 mb-6 text-sm text-gray-300">
                 <div className="flex items-center gap-2">
                   <Calendar size={15} className="text-gold shrink-0" />
-                  <span>Viernes y Sábado</span>
+                  <span>Sábado y Domingo</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={15} className="text-gold shrink-0" />

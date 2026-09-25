@@ -4,7 +4,7 @@ export const actividades: Evento[] = [
   {
     id: "evt-regional-noreste",
     titulo: "Convención Regional FGBMFI – Zona Noreste",
-    fecha: "Viernes y Sábado",
+    fecha: "Sábado y Domingo",
     hora: "Cena del viernes y almuerzo del sábado",
     lugar: "DoubleTree by Hilton, 237 S Broad St",
     ciudad: "Philadelphia, PA",
